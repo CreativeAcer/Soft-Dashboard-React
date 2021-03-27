@@ -15,6 +15,7 @@ import { Header } from '../../styledcomponents/header';
 const Layout = (props) => {
 
     const [sidebar, sidebarfn] = useState({show: true});
+    const [open, setOpen] = useState(false);
 
     const hideBar = () => {
         sidebarfn({
@@ -30,15 +31,9 @@ const Layout = (props) => {
                 <button onClick={hideBar}>hide</button>
                 <p>Site title</p>
             </Header>
-            <Sidebar className={sidebar.show ? 'Sidebar show' : 'Sidebar hide'}>Sidebar
-                <Sidebarlist>
-                    <Sidebarlistlink>Item One</Sidebarlistlink>
-                    <Sidebarlistlink>Item Two</Sidebarlistlink>
-                    <Sidebarlistlink>Item Three</Sidebarlistlink>
-                    <Sidebarlistlink>Item Four</Sidebarlistlink>
-                    <Sidebarlistlink>Item Five</Sidebarlistlink>
-                </Sidebarlist>
-            </Sidebar>
+            {/* <Sidebar className={sidebar.show ? 'Sidebar show' : 'Sidebar hide'}  >Sidebar
+                
+            </Sidebar> */}
             <Maincomponent>{props.children}</Maincomponent>
         </JsxWrapper>)
 };

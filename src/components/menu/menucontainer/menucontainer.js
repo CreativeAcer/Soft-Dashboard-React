@@ -1,6 +1,6 @@
 import React from 'react';
 import { bool } from 'prop-types';
-import { StyledMenu } from '../../../styledcomponents/menu';
+import { StyledMenu } from '../../../styledcomponents/menu-styled';
 
 const Menu = ({ open }) => {
     return (

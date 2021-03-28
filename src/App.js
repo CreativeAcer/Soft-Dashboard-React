@@ -4,11 +4,9 @@ import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global';
 import { theme } from './theme';
-import { Burger, Menu } from './components';
-
-import Layout from './components/layout/layout';
+import { Burger, Menu, Main, Header } from './components';
 import { Wrap } from './styledcomponents/wrap';
-import Main from './components/main/main';
+import { GridWrap } from './styledcomponents/gridWrap-styled';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -20,9 +18,10 @@ function App() {
         <GlobalStyles />
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
-        <Layout>
+        <Header></Header>
+        <GridWrap columns={"1fr 1fr 1fr 1fr"}>
           <Main></Main>
-        </Layout>
+        </GridWrap>
       </Wrap>
     </ThemeProvider>
     

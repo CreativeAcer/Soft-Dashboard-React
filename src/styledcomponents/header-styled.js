@@ -1,6 +1,6 @@
 import styled  from 'styled-components';
 
-export const Header = styled.header`
+export const StyledHeader = styled.header`
     grid-area: ${props => props.Gridarea || "header"};
     background-color: lawngreen;
     display: flex;

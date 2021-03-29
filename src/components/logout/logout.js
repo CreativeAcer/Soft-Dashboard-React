@@ -7,19 +7,20 @@ import { useMsal } from "@azure/msal-react";
  */
  import { Button } from '../../styledcomponents/button-styled';
 
-const Login = (props) => {
+const Logout = (props) => {
     const { instance, inProgress } = useMsal();
 
-    if (inProgress === "login") {
-        return <span>Login is currently in progress!</span>
+    if (inProgress === "logout") {
+        return <span>Logout is currently in progress!</span>
     } else {
         return (
             <JsxWrapper>
-                    <Button onClick={() => instance.loginPopup({})}>Login</Button>
+                    <Button onClick={() => instance.logoutPopup()}>Logout</Button>
             </JsxWrapper>
+            
         );
     }
     
 }
 
-export default Login;
+export default Logout;

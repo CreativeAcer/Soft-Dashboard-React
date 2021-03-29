@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
-export const GridWrap = styled.div`
+export const GridCentered = styled.div`
     display: grid;
+    align-content: center;
+    text-align: center;
     grid-area: ${props => props.Gridarea || "main"};
     grid-template-columns: ${props => props.columns || "1fr"};
     grid-template-rows: auto; 

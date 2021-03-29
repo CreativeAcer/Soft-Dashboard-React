@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     background: ${({ theme }) => theme.primaryDark};
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-around;
     padding: 0 16px;
     width: inherit;
 `;

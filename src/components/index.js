@@ -3,3 +3,5 @@ export { default as Menu } from './menu/menucontainer';
 export { default as Main } from './main';
 export { default as Header } from './header';
 export { default as Login } from './login';
+export { default as Logout } from './logout';
+export { default as SignInSignOut } from './SignInSignOut';

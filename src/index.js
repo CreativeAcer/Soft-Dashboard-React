@@ -4,23 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { MsalProvider } from "@azure/msal-react";
-import { PublicClientApplication } from "@azure/msal-browser";
-
-// MSAL configuration
-const configuration = {
-    auth: {
-        clientId: process.env.REACT_APP_API_KEY
-    }
-};
-
-const pca = new PublicClientApplication(configuration);
 
   // Component
 const AppProvider = () => (
-    <MsalProvider instance={pca}>
-        <App />
-    </MsalProvider>
+    <App />
 );
 
 ReactDOM.render(<AppProvider />, document.getElementById('root'));

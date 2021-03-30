@@ -6,7 +6,6 @@ import { bool } from 'prop-types';
 import { StyledMenu } from '../../../styledcomponents/menu-styled';
 
 import {
-  BrowserRouter as Router,
   Link
 } from "react-router-dom";
 
@@ -19,13 +18,6 @@ const Menu = ({ open }) => {
           Pricing</Link>
               <Link to="/users"><span role="img" aria-label="contact">&#x1f4e9;</span>
           Contact</Link>
-          {/* <Sidebarlist>
-                    <Sidebarlistlink>Item One</Sidebarlistlink>
-                    <Sidebarlistlink>Item Two</Sidebarlistlink>
-                    <Sidebarlistlink>Item Three</Sidebarlistlink>
-                    <Sidebarlistlink>Item Four</Sidebarlistlink>
-                    <Sidebarlistlink>Item Five</Sidebarlistlink>
-                </Sidebarlist> */}
       </StyledMenu>
     )
   }

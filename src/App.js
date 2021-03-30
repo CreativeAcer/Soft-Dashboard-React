@@ -12,8 +12,8 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Burger, Menu, Main, Header } from './components';
 import { Wrap } from './styledcomponents/wrap';
-import { GridWrap } from './styledcomponents/gridWrap-styled';
 import { GridCentered } from './styledcomponents/gridCentered-styled';
+import { TextReveal } from './styledcomponents/textreveal-styled';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -27,13 +27,14 @@ function App() {
         <AuthenticatedTemplate>
               <Burger open={open} setOpen={setOpen} />
               <Menu open={open} setOpen={setOpen} />
-              <GridWrap columns={"1fr 1fr 1fr 1fr"}>
-                <Main></Main>
-              </GridWrap>
+              <Main></Main>
         </AuthenticatedTemplate>
         <UnauthenticatedTemplate>
           <GridCentered>
-            <p>please login!</p>
+            <TextReveal class="home-title">
+                <span>To use the application,</span>
+                <span>please login.</span>
+            </TextReveal>
           </GridCentered>
         </UnauthenticatedTemplate>
         </Wrap>

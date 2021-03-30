@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import JsxWrapper from '../../hoc/jsxwrapper/jsxwrapper';
 import {
-    BrowserRouter as Router,
     Switch,
     Route
   } from "react-router-dom";
@@ -10,12 +9,16 @@ import {
  * Styled Component import
  */
 import { Softcard } from '../../styledcomponents/card-styled';
+import { GridWrap } from '../../styledcomponents/gridWrap-styled';
+import { GridCentered } from '../../styledcomponents/gridCentered-styled';
+import { NotFound } from '..';
 
 const Main = (props) => {
     return (
         <Switch>
           <Route path="/about">
             {/* <About /> */}
+            <GridWrap columns={"1fr 1fr 1fr 1fr"}>
             <JsxWrapper>
              <Softcard>ABOUT</Softcard>
              <Softcard>Softcard</Softcard>
@@ -29,10 +32,12 @@ const Main = (props) => {
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>
-         </JsxWrapper>
+            </JsxWrapper>
+            </GridWrap>
           </Route>
           <Route path="/users">
             {/* <Users /> */}
+            <GridWrap columns={"1fr 1fr 1fr 1fr"}>
             <JsxWrapper>
              <Softcard>USERS</Softcard>
              <Softcard>Softcard</Softcard>
@@ -46,10 +51,12 @@ const Main = (props) => {
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>
-         </JsxWrapper>
+            </JsxWrapper>
+            </GridWrap>
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             {/* <Home /> */}
+            <GridWrap columns={"1fr 1fr 1fr 1fr"}>
             <JsxWrapper>
              <Softcard>HOME</Softcard>
              <Softcard>Softcard</Softcard>
@@ -63,23 +70,15 @@ const Main = (props) => {
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>
-         </JsxWrapper>
+            </JsxWrapper>
+            </GridWrap>
+          </Route>
+          <Route>
+            <GridCentered>
+                <NotFound></NotFound>
+            </GridCentered>
           </Route>
         </Switch>
-        // <JsxWrapper>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Softcard</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        //     <Softcard>Main</Softcard>
-        // </JsxWrapper>
     )
 }
 

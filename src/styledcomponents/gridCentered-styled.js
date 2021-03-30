@@ -9,4 +9,6 @@ export const GridCentered = styled.div`
     grid-template-rows: auto; 
     gap: 10px 10px;
     padding: 1%;
+    height: 100%;
+    width: 100%;
 `;

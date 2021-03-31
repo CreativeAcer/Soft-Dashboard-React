@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
+import { useOnClickOutside } from './hooks';
 /**
  * MSAL
  */
@@ -17,6 +18,8 @@ import { TextReveal } from './styledcomponents/textreveal-styled';
 
 function App() {
   const [open, setOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
 
   return (
       <React.Fragment>
@@ -25,8 +28,10 @@ function App() {
         <Wrap>
         <Header></Header>
         <AuthenticatedTemplate>
+            <div ref={node}>
               <Burger open={open} setOpen={setOpen} />
               <Menu open={open} setOpen={setOpen} />
+            </div>
               <Main></Main>
         </AuthenticatedTemplate>
         <UnauthenticatedTemplate>

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import JsxWrapper from '../../hoc/jsxwrapper/jsxwrapper';
 import { useMsal } from "@azure/msal-react";
 
 /**
@@ -14,9 +13,7 @@ const Login = (props) => {
         return <span>Login is currently in progress!</span>
     } else {
         return (
-            <JsxWrapper>
-                    <Button onClick={() => instance.loginPopup({})}>Login</Button>
-            </JsxWrapper>
+            <Button onClick={() => instance.loginPopup({})}>Login</Button>
         );
     }
     

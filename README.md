@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Introduction
 
+This project is built as a base for a dashboard in React using Styled components.
+
+[React Link](https://reactjs.org/)
+[Styled components](https://www.google.com/search?channel=fs&client=ubuntu&q=styled+components)
+
+MSAL authentication has been added using Azure AD.
 
 
 ## Available Scripts

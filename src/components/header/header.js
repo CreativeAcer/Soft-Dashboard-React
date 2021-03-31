@@ -34,7 +34,7 @@ const Header = (props) => {
         return (
             <JsxWrapper>
                 <StyledHeader>
-                    <p>Site title</p>
+                    <p>React Dashboard</p>
                     <SignInSignOut></SignInSignOut>
                 </StyledHeader>
             </JsxWrapper>

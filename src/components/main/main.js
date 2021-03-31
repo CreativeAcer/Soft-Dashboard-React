@@ -16,11 +16,11 @@ import { NotFound } from '..';
 const Main = (props) => {
     return (
         <Switch>
-          <Route path="/about">
+          <Route path="/contact">
             {/* <About /> */}
             <GridWrap columns={"1fr 1fr 1fr 1fr"}>
             <JsxWrapper>
-             <Softcard>ABOUT</Softcard>
+             <Softcard>CONTACT</Softcard>
              <Softcard>Softcard</Softcard>
              <Softcard>Main</Softcard>
              <Softcard>Main</Softcard>

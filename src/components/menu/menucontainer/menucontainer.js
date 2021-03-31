@@ -12,11 +12,11 @@ import {
 const Menu = ({ open }) => {
     return (
       <StyledMenu open={open}>
-              <Link to="/"><span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
-          About us</Link>
-              <Link to="/about"><span role="img" aria-label="price">&#x1f4b8;</span>
-          Pricing</Link>
-              <Link to="/users"><span role="img" aria-label="contact">&#x1f4e9;</span>
+              <Link to="/"><span role="img" aria-label="home">&#x1F30F;</span>
+          Home</Link>
+              <Link to="/users"><span role="img" aria-label="users">&#x1F46A;</span>
+          Users</Link>
+              <Link to="/contact"><span role="img" aria-label="contact">&#x1f4e9;</span>
           Contact</Link>
       </StyledMenu>
     )

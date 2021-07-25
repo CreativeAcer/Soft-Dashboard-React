@@ -7,8 +7,12 @@ This project is built as a base for a dashboard in React using Styled components
 [React Link](https://reactjs.org/)
 [Styled components](https://www.google.com/search?channel=fs&client=ubuntu&q=styled+components)
 
-MSAL authentication has been added using Azure AD.
-
+  
+U can use this code as a quick and easy starting point to start development.
+It features:  
+MSAL authentication has been added using Azure AD.  
+Styled components  
+React Routing into multiple 'pages'  
 
 ## Available Scripts
 
